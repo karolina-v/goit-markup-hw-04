@@ -299,12 +299,16 @@ img {
 
   background-color: var(--png-bg-color);
 
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-bottom: var(--card-gap);
 }
 
 .feature-icon {
   width: 70px;
   height: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .features-title {
@@ -418,6 +422,22 @@ img {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+.groups-clients {
+  display: flex;
+}
+
+.group {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.group:not(:last-child) {
+  margin-right: var(--card-gap);
 }
 
 /* подвал */
