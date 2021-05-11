@@ -24,6 +24,8 @@
     0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/* Общие свойства */
+
 /* страница */
 body {
   background-color: var(--primery-bg-color);
@@ -35,12 +37,22 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* все img-файлы */
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
+/* маркеры в списках */
+.list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+/* все контейнеры */
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -64,6 +76,13 @@ img {
   align-items: center;
 }
 
+.page-header .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
 /* логотип в шапке */
 .logo {
   margin-right: 93px;
@@ -78,14 +97,6 @@ img {
 
 .page-header .logo-part {
   color: var(--logo-header-part-color);
-}
-
-/* маркеры в списках */
-.list {
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
 }
 
 /* навигация сайта */
@@ -139,17 +150,12 @@ img {
   color: var(--accent-color);
 }
 
-.page-header .link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-
 /* баннер */
 .banner {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: var(--second-bg-color);
 
@@ -206,6 +212,7 @@ img {
   padding-bottom: 94px;
 }
 
+/* все заголовки секций */
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -224,7 +231,6 @@ img {
 
 .features .item {
   width: calc((100% - 90px) / 4);
-  /* width: 270px; */
 }
 
 .features .item:not(:last-child) {
@@ -279,7 +285,6 @@ img {
 
 .team-member {
   width: calc((100% - 90px) / 4);
-  /* width: 270px; */
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
   box-shadow: var(--card-shadow);
@@ -289,6 +294,10 @@ img {
 
 .team-member:not(:last-child) {
   margin-right: var(--card-gap);
+}
+
+.team-content {
+  padding: 30px 0;
 }
 
 .member-name {
@@ -301,10 +310,6 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-
-.team-content {
-  padding: 30px 0;
 }
 
 .member-position {
@@ -322,12 +327,7 @@ img {
 /* подвал */
 .footer {
   background-color: var(--second-bg-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer .logo-part {
-  color: var(--logo-footer-part-color);
+  padding: 60px 0;
 }
 
 .footer .logo {
@@ -337,7 +337,11 @@ img {
   margin-bottom: 20px;
 }
 
-/* address */
+.footer .logo-part {
+  color: var(--logo-footer-part-color);
+}
+
+/* address в футере */
 .footer .address {
   color: var(--address-footer-color);
 
@@ -406,7 +410,6 @@ img {
 
 .project {
   width: calc((100% - 60px) / 3);
-  /* width: 370px; */
   box-sizing: border-box;
 
   background-color: var(--primery-bg-color);
