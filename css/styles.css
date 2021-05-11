@@ -10,8 +10,9 @@
   --contacts-footer-color: rgba(255, 255, 255, 0.6);
   --primery-bg-color: #ffffff;
   --second-bg-color: #2f303a;
-  --team-bg-color: #f5f4fa;
+  --icon-bg-color: #f5f4fa;
   --buttons-bg-color: #f5f4fa;
+  --icon-fill-color: #afb1b8;
   --logo-header-part-color: #000000;
   --logo-footer-part-color: #ffffff;
   --address-footer-color: #ffffff;
@@ -141,7 +142,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--title-text-color);
+  color: var(--contacts-header-color);
 }
 
 .contacts .link:hover,
@@ -276,7 +277,7 @@ img {
 
 /* наша команда */
 .section.team {
-  background-color: var(--team-bg-color);
+  background-color: var(--icon-bg-color);
 }
 
 .team {
@@ -296,8 +297,9 @@ img {
   margin-right: var(--card-gap);
 }
 
-.team-content {
-  padding: 30px 0;
+.member-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .member-name {
@@ -314,7 +316,7 @@ img {
 
 .member-position {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   color: var(--title-text-color);
 
