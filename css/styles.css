@@ -143,12 +143,19 @@ img {
 .contacts .item {
   display: flex;
   align-items: center;
+
+  color: var(--contacts-header-color);
 }
 
 .contacts .icon {
   margin-right: 10px;
 
-  fill: var(--contacts-header-color);
+  fill: currentColor;
+}
+
+.contacts .icon:hover,
+.contacts .icon:focus {
+  fill: var(--accent-color);
 }
 
 .contacts .link {
@@ -369,13 +376,6 @@ img {
 }
 
 .member-pages .page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 44px;
-  height: 44px;
-
   border-radius: 50%;
 }
 
@@ -389,16 +389,23 @@ img {
 }
 
 .member-pages .page-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
   color: var(--icon-fill-color);
+}
+
+.member-pages .page-icon:hover,
+.member-pages .page-icon:focus {
+  color: var(--primery-bg-color);
 }
 
 .page-icon .icon {
   fill: currentColor;
-}
-
-.page-icon .icon:hover,
-.page-icon .icon:focus {
-  color: var(--primery-bg-color);
 }
 
 /* постоянные клиенты */
@@ -423,8 +430,7 @@ img {
   margin-right: 30px;
 }
 
-.clients .group:hover,
-.clients .group:focus {
+.clients .group:hover {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
@@ -435,8 +441,6 @@ img {
 
 /* подвал */
 .footer {
-  padding: 60px 0;
-
   background-color: var(--second-bg-color);
 }
 
@@ -475,8 +479,10 @@ img {
 }
 
 .footer-address .link {
-  color: var(--contacts-footer-color);
+  margin-top: 60px;
+  margin-bottom: 60px;
 
+  color: var(--contacts-footer-color);
   text-decoration: none;
 }
 
@@ -491,6 +497,11 @@ img {
   align-items: center;
 }
 
+.footer .social {
+  margin-top: 75px;
+  margin-bottom: 97px;
+}
+
 .social .title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -502,27 +513,12 @@ img {
   color: var(--white-text-color);
 }
 
-.section-title {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-
-  color: var(--primery-text-color);
-}
-
 .social-pages {
   display: flex;
   justify-content: center;
 }
 
 .social-pages .page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 44px;
-  height: 44px;
-
   background-color: var(--footer-icon-bg-color);
   border-radius: 50%;
 }
@@ -537,6 +533,13 @@ img {
 }
 
 .social-pages .page-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
   color: var(--primery-bg-color);
 }
 
@@ -579,6 +582,10 @@ img {
 .projects {
   display: flex;
   flex-wrap: wrap;
+}
+
+.projects .link {
+  text-decoration: none;
 }
 
 .project {
