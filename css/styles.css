@@ -137,14 +137,28 @@ img {
 }
 
 .contacts .item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .contacts .item {
+  color: var(--contacts-header-color);
+}
+
+.contacts .link {
   display: flex;
+
   align-items: center;
 
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--contacts-header-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus,
+.contacts .link:active {
+  color: var(--accent-color);
 }
 
 .contacts .icon {
@@ -156,20 +170,6 @@ img {
 .contacts .icon:hover,
 .contacts .icon:focus {
   fill: var(--accent-color);
-}
-
-.contacts .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: var(--contacts-header-color);
-}
-
-.contacts .link:hover,
-.contacts .link:focus,
-.contacts .link:active {
-  color: var(--accent-color);
 }
 
 /* баннер */
