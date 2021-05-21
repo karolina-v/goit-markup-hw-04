@@ -375,23 +375,15 @@ img {
   justify-content: center;
 }
 
-.member-pages .page {
-  border-radius: 50%;
-}
-
 .member-pages .page:not(:last-child) {
   margin-right: 10px;
-}
-
-.member-pages .page:hover,
-.member-pages .page:focus {
-  background-color: var(--accent-color);
 }
 
 .member-pages .page-icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
 
   width: 44px;
   height: 44px;
@@ -401,6 +393,7 @@ img {
 
 .member-pages .page-icon:hover,
 .member-pages .page-icon:focus {
+  background-color: var(--accent-color);
   color: var(--primery-bg-color);
 }
 
@@ -413,7 +406,11 @@ img {
   display: flex;
 }
 
-.clients .group {
+.clients .group:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients .group-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -426,22 +423,26 @@ img {
   border-radius: 4px;
 }
 
-.clients .group:not(:last-child) {
-  margin-right: 30px;
-}
-
-.clients .group:hover {
+.clients .group-icon:hover,
+.clients .group-icon:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
 
-.group-icon {
+.group .icon {
   fill: currentColor;
 }
 
 /* подвал */
 .footer {
+  padding: 60px 0;
+
   background-color: var(--second-bg-color);
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-address {
@@ -459,7 +460,6 @@ img {
   color: var(--logo-footer-part-color);
 }
 
-/* address в подвале */
 .footer-address .address {
   font-style: normal;
   font-weight: 400;
@@ -479,9 +479,6 @@ img {
 }
 
 .footer-address .link {
-  margin-top: 60px;
-  margin-bottom: 60px;
-
   color: var(--contacts-footer-color);
   text-decoration: none;
 }
@@ -492,14 +489,8 @@ img {
   color: var(--accent-color);
 }
 
-.footer .container {
-  display: flex;
-  align-items: center;
-}
-
 .footer .social {
-  margin-top: 75px;
-  margin-bottom: 97px;
+  margin: 0;
 }
 
 .social .title {
@@ -515,21 +506,10 @@ img {
 
 .social-pages {
   display: flex;
-  justify-content: center;
-}
-
-.social-pages .page {
-  background-color: var(--footer-icon-bg-color);
-  border-radius: 50%;
 }
 
 .social-pages .page:not(:last-child) {
   margin-right: 10px;
-}
-
-.social-pages .page:hover,
-.social-pages .page:focus {
-  background-color: var(--accent-color);
 }
 
 .social-pages .page-icon {
@@ -541,6 +521,13 @@ img {
   height: 44px;
 
   color: var(--primery-bg-color);
+  background-color: var(--footer-icon-bg-color);
+  border-radius: 50%;
+}
+
+.social-pages .page-icon:hover,
+.social-pages .page-icon:focus {
+  background-color: var(--accent-color);
 }
 
 .page-icon .icon {
