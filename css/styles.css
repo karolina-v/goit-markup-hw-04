@@ -591,8 +591,8 @@ img {
   margin-bottom: var(--card-gap);
 }
 
-.project:hover,
-.project:focus {
+.projects .link:hover,
+.projects .link:focus {
   box-shadow: var(--card-projects-shadow);
 }
 
